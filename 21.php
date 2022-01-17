@@ -29,5 +29,3 @@ function sumPrice($int1,$int2){
 $total = sumPrice(3,5);
 
 echo $total;
-
-?>
