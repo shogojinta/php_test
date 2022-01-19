@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName 'ID_PASS'
+AuthUserFile /Applications/MAMP/htdocs/php_test/mainte/.htpasswd
+require valid-user
