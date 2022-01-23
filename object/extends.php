@@ -1,5 +1,15 @@
 <?php
-    class Product {
+    class BaseProduct {
+        public function echoProduct(){
+            echo '親クラスです';
+        }
+
+        public function getProduct(){
+            echo '親の関数です';
+        }
+    }
+
+    class Product extends BaseProduct {
         private $product = [];
 
         function __construct($product){
@@ -7,6 +17,7 @@
         }
 
         public function getProduct(){
+            
             echo $this->product;
         }
 
@@ -23,6 +34,8 @@
 
     $instance->getProduct();
     echo '<br>';
+
+    $instance->echoProduct();
 
     $instance->addProduct('追加分');
 
